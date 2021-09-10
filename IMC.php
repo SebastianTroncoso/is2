@@ -18,4 +18,20 @@
     <input type="submit">    
 </form>
 
+<?php
+
+$altura = $_GET ["altura"];
+$weight = $_GET["peso"];
+
+$alturaDividida = ($altura / 100);
+
+$calculadoraMasaCorporal = $weight / ($alturaDividida * $alturaDividida);
+
+echo "Su índice de masa corporal es de $calculadoraMasaCorporal";
+
+?>
+</body>
+</html>
+
+
 
